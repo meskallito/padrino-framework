@@ -174,6 +174,31 @@ module Padrino
       def success
         self[:success]
       end
+
+      # @since 0.10.8
+      # @api public
+      def info=(message)
+        self[:info] = message
+      end
+
+      # @since 0.10.8
+      # @api public
+      def info
+        self[:info]
+      end
+
+      # @since 0.10.8
+      # @api public
+      def warning=(message)
+        self[:warning] = message
+      end
+
+      # @since 0.10.8
+      # @api public
+      def warning
+        self[:warning]
+      end
+
     end # Storage
 
     module Helpers
